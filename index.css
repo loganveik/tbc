@@ -52,13 +52,13 @@
     opacity: 0.5;
 }
 
-.icons {
+body .icons {
     position: absolute;
     bottom: 1.6rem;
     left: 2.8rem;
 }
 
-.icons i {
+body .icons i {
     font-size: 0.8rem;
     letter-spacing: 4px;
 }
@@ -103,8 +103,10 @@
 
 #section_title {
     padding: 2rem;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
+
+/* music page */
 
 .music_content {
     width: 80%;
@@ -113,35 +115,35 @@
 .music_content .row {
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
-.card {
+.music_content .card {
     width: 30rem;
-    padding: 1rem;
+    margin: 1rem;
 }
 
 .music_content .row2 {
     width: 100%;
     display: flex;
+    padding: 0 0 1rem;
 }
 
-.music_content .row2 .card{
-    width: 24rem;
+.music_content .row2 .card {
+    width: 22rem;
 }
 
-.card img {
+.music_content .card img {
     width: 100%;
 }
 
-.card p {
+.music_content .card p {
     font-size: 1.25rem;
     padding: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-.card a {
+.music_content .card a {
     cursor: pointer;
     background-color: #506B2C;
     color: white;
@@ -150,9 +152,152 @@
     font-weight: bold;
 }
 
-.card a:hover {
+.music_content .card a:hover {
     opacity: 0.7;
 }
+
+/* videos page */
+
+/* tour page */
+
+.tour_content {
+    width: 50%;
+    flex-direction: column;
+}
+
+.tour_content .card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.tour_content #date, .tour_content #venue, .tour_content #city, .tour_content .btns {
+    margin: 1rem 0;
+}
+
+.tour_content #date, .tour_content #city, .tour_content .btns {
+    font-weight: bold;
+}
+
+.tour_content #venue {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+}
+
+.tour_content #city {
+    font-style: italic;
+}
+
+.tour_content .btns a {
+    margin: 0 0.25rem;
+    cursor: pointer;
+    background-color: #506B2C;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.tour_content .btns a:hover {
+    opacity: 0.7;
+}
+
+.tour_content h2 {
+    font-size: 1.25rem;
+    margin: 1rem;
+}
+
+.tour_content form {
+    padding: 0 0 4rem;
+}
+
+.tour_content form input {
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    color: #506B2C;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tour_content form input::placeholder {
+    color: #506B2C;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.tour_content form a {
+    cursor: pointer;
+    background-color: #506B2C;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 100%;
+}
+
+.tour_content form a:hover {
+    opacity: 0.7;
+}
+
+/* store page */
+
+/* follow page */
+
+.follow_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .follow_content h2{
+    padding: 1rem 0;
+} */
+
+.follow_content form {
+    padding: 1rem 0;
+}
+
+.follow_content form input {
+    padding: 0.75rem;
+    border: none;
+    outline: none;
+    color: #506B2C;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.follow_content form a {
+    cursor: pointer;
+    background-color: #506B2C;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 100%;
+}
+
+.follow_content form a:hover {
+    opacity: 0.7;
+}
+
+.follow_content .icons{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.follow_content .icons i {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/* media queries */
 
 @media(max-width: 1023px) {
     .icons {
