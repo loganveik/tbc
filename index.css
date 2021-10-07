@@ -408,10 +408,21 @@ iframe {
         width: 100%;
         margin: 0;
     }
+    .videos_content {
+        width: 100%;
+    }
 }
 
 @media(max-width: 444px) {
-    .tour_content .card .btns a{
-        margin: 1rem 0 0;
+    .tour_content .card .btns {
+        flex-direction: column;
+    }
+    .tour_content .card .btns a {
+        margin: 10rem 0;
+    }
+    .videos_content .row iframe {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
