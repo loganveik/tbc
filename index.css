@@ -115,21 +115,12 @@ body .icons i {
 .music_content .row {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .music_content .card {
-    width: 30rem;
+    width: 350px;
     margin: 1rem;
-}
-
-.music_content .row2 {
-    width: 100%;
-    display: flex;
-    padding: 0 0 1rem;
-}
-
-.music_content .row2 .card {
-    width: 22rem;
 }
 
 .music_content .card img {
@@ -157,6 +148,25 @@ body .icons i {
 }
 
 /* videos page */
+
+.videos-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    margin: 0 2rem 5rem;
+}
+
+.videos-content .row {
+    width: 100%;
+    flex-direction: row;
+}
 
 /* tour page */
 
@@ -260,6 +270,11 @@ body .icons i {
 
 .store_content .card img {
     width: 100%;
+    cursor: pointer;
+}
+
+.store_content .card img:hover {
+    opacity: 0.7;
 }
 
 .store_content a {
@@ -275,10 +290,11 @@ body .icons i {
     opacity: 0.7;
 }
 
-#shop{
+#shop {
     font-size: 1rem;
     padding: 1rem 1rem;
 }
+
 /* follow page */
 
 .follow_content {
@@ -334,6 +350,17 @@ body .icons i {
 
 /* media queries */
 
+@media(max-width: 1200px) {
+    .music_content .row {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .music_content .row .card {
+        width: 60%;
+    }
+}
+
 @media(max-width: 1023px) {
     .icons {
         display: none;
@@ -353,5 +380,38 @@ body .icons i {
     #links a {
         font-size: 1.1rem;
         letter-spacing: 4px;
+    }
+}
+
+@media(max-width: 746px) {
+    #logo {
+        top: 2.25rem;
+        right: 2.6rem;
+        width: 8rem;
+    }
+    #links {
+        top: 2rem;
+        left: 2rem;
+    }
+    #links li {
+        padding: 0.5rem;
+    }
+    #links a {
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+    }
+    .store_content .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .store_content .card {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 444px) {
+    .tour_content .card .btns a{
+        margin: 1rem 0 0;
     }
 }
